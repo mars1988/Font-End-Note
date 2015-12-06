@@ -1,0 +1,41 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+
+
+.container{
+  margin:10px auto;
+  width: 500px;
+  border:1px solid black;
+
+}
+
+ul,li{
+  list-style: none;
+}
+li{
+  display: inline-block;
+  a{
+    text-decoration:none;
+    background:grey;
+    color:white;
+    font-size :12px;
+    padding:4px 5px;
+  }
+}
+
+#tab1,#tab2,#tab3{
+  width:500px;
+  background:white;
+  height:100px;
+  line-height:100px;
+  margin:1px 0px;
+}
+
+.active{
+  background:white;
+  color:black;
+}
