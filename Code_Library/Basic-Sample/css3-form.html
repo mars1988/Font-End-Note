@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS3 form sample</title>
+  <style>
+  form{
+    border:1px solid black;
+    margin:10px auto;
+  }
+  input,textarea{
+    padding: 9px;
+    border: 1px solid #E5E5E5;
+    outline:0;
+    font: normal 13px/100% Verdana, Tahoma, sans-serif; 
+    width:200px;
+    -webkit-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px;
+    -moz-box-shadow:rgba(0,0,0,0.1) 0px 0px 8px;
+    box-shadow:rgba(0,0,0,0.1) 0px 0px 8px;
+  }
+  label {
+    /* To make sure that all labels have the same size and are properly aligned */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  textarea{
+    width: 400px; 
+    max-width: 400px; 
+    height: 150px; 
+    line-height: 150%; 
+  }
+  .submit input { 
+    width: auto; 
+    padding: 9px 15px; 
+    background: #617798; 
+    border: 0; 
+    font-size: 14px; 
+    color: #FFFFFF; 
+    -moz-border-radius: 5px; 
+    -webkit-border-radius: 5px; 
+  }
+
+  /*when mouser hover/focus on the input field*/
+  input:hover,textarea:hover,
+  input:focus,textarea:focus{
+    border-color:#C9C9C9; 
+    -webkit-box-shadow:rgba(0, 0, 0, 0.15) 0px 0px 8px; 
+  }
+  </style>
+</head>
+<body>
+  <form class="form"> 
+
+    <p class="name"> 
+      <label for="name">Name</label> 
+      <input type="text" name="name" id="name" /> 
+
+    </p> 
+
+    <p class="email">
+      <label for="email">E-mail</label> 
+      <input type="text" name="email" id="email" /> 
+
+    </p> 
+
+    <p class="web"> 
+      <label for="web">Website</label> 
+      <input type="text" name="web" id="web" /> 
+
+    </p> 
+
+    <p class="text"> 
+      <textarea name="text"></textarea> 
+    </p> 
+
+    <p class="submit"> 
+      <input type="submit" value="Send" /> 
+    </p> 
+
+  </form>
+</body>
+</html>
